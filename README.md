@@ -43,12 +43,12 @@ def fit_vectorizer(corpus):
         corpus (list): List with the sentences.
 
     Returns:
-        (tf.keras.layers.TextVectorization): an instance of the TextVectorization class containing the word-index dictionary,
-        adapted to the corpus sentences.
+        (tf.keras.layers.TextVectorization): an instance of the TextVectorization class
+         containing the word-index dictionary, adapted to the corpus sentences.
     """
 
-    tf.keras.utils.set_random_seed(65) # Do not change this line or you may have different expected outputs throughout the
-    assignment
+    tf.keras.utils.set_random_seed(65) # Do not change this line or you may have different
+    expected outputs throughout the assignment
 
     ### START CODE HERE ###
 
@@ -76,7 +76,8 @@ def n_gram_seqs(corpus, vectorizer):
 
     Args:
         corpus (list of string): lines of texts to generate n-grams for
-        vectorizer (tf.keras.layers.TextVectorization): an instance of the TextVectorization class adapted in the corpus
+        vectorizer (tf.keras.layers.TextVectorization): an instance of the
+        TextVectorization class adapted in the corpus
 
     Returns:
         (list of tf.int64 tensors): the n-gram sequences for each line in the corpus
